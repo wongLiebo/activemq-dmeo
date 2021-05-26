@@ -45,6 +45,8 @@
         <property name="connectionFactory" ref="jmsFactory" />
         <property name="destination" ref="destinationQueue" />
         <property name="messageListener" ref="myListener" />
+        <property name="pubSubDomain" value="true" />
+
 
     </bean>
 

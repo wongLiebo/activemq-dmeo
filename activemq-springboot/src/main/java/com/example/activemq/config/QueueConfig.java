@@ -10,7 +10,7 @@ import javax.jms.Queue;
 @Component
 public class QueueConfig {
 
-    @Value("${myqueue}")
+    @Value(" ${myqueue}")
     private String myQueue;
 
     @Bean

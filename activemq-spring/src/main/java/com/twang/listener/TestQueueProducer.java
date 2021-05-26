@@ -22,8 +22,8 @@ public class TestQueueProducer  {
         jmsTemplate.send(new MessageCreator() {
             @Override
             public Message createMessage(Session session) throws JMSException {
-                TextMessage textMessage = session.createTextMessage("MQ-spring");
-                textMessage.setStringProperty("md5","天青色等烟雨而我在等你");
+                TextMessage textMessage = session.createTextMessage("天青色等烟雨而我在等你");
+                textMessage.setStringProperty("md5","MQ-spring");
                 return textMessage;
             }
         });//发送到默认目的地
